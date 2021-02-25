@@ -1,0 +1,10 @@
+pull
+-git pull origin master
+
+
+push
+-git stauts
+-git add .
+git commit -m "massage"
+
+git push origin +master
