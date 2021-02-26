@@ -7,7 +7,7 @@ public class MyMathTest {
 		long result1 = mm.add(5L, 3L);
 		long result2 = mm.subtract(5L, 3L);
 		long result3 = mm.multiply(5L, 3L);
-		double result4 = mm.divide(5 ,3);
+		double result4 = mm.divide(5L ,3L);
 		
 		System.out.println("add(5L, 3L) =" + result1);
 		System.out.println("subtract(5L, 3L) =" + result2);
@@ -19,7 +19,16 @@ public class MyMathTest {
 
 }
 
-class MyMath {
+ class MyMath {
+	 void printGugudan(int dan) {
+		 if(!(2<=dan && dan<=9)) {
+			 return; //입력받은 단(dan)이 2~9가아니면, 메서드 종료하고 돌아가기
+		 }
+		 for(int i=1; i<=9; i++) {
+			 System.out.printf("%d * %d = %d%n", dan, i, dan*i);
+		 }
+	 }
+	
 	long add(long a, long b) {
 		long result = a+ b;
 		return result; //==return a + b
