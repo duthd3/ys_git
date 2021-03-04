@@ -1,1 +1,12 @@
 
+public class Main {//객체 이름	(소스파일의 이름과 같은 객체는 반드시 main함수를 가져야함)
+//public->객체 접근 제어(public 이라는 키워드는 1개만 허용)
+	public static void main(String[] args) {//함수 이름
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!!!");
+		
+
+	}
+
+}
+
